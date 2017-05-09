@@ -8,7 +8,6 @@ import App from './App';
 
 const spinner = require('./assets/loading.gif');
 
-
 Vue.use(lazyLoad, {
   loading: spinner,
 });

@@ -1,9 +1,6 @@
 <template>
   <div id="app" class="container-fluid">
 
-    <img v-lazy="'http://lorempixel.com/400/200'"/>
-    <img v-lazy="imgObj" alt="">
-
     <headings></headings>
     
     <test data-backstop="test"></test>
@@ -74,14 +71,6 @@
   export default {
     name: 'app',
     components: Components,
-    data() {
-      return {
-        imgObj: {
-          src: 'http://lorempixel.com/200/200',
-          loading: require('./assets/logo.png'), // eslint-disable-line
-        },
-      };
-    },
   };
 </script>
 
