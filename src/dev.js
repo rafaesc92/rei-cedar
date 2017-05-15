@@ -9,7 +9,8 @@ import App from './App';
 import Plugins from './plugins/_index';
 
 Object.keys(Plugins).forEach((key) => {
-  Vue.use(Plugins[key].use, Plugins[key].options);
+  const opts = Plugins[key].options || {};
+  Vue.use(Plugins[key].use, opts);
 });
 
 // Vue.use(lazyLoad, {
