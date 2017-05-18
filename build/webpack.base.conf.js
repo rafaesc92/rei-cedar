@@ -2,15 +2,24 @@ var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
-var isRelease = process.env.NODE_ENV === 'release'
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+function getEntry(env) {
+  if (env === 'release') {
+    return './src/main.js';
+  } else if (env === 'ce') {
+    return './src/customElement.js';
+  } else {
+    return './src/dev.js';
+  }
+}
+
 module.exports = {
   entry: {
-    app: isRelease ? './src/main.js' : './src/dev.js'
+    app: getEntry(process.env.NODE_ENV)
   },
   output: {
     path: config.build.assetsRoot,
