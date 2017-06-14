@@ -1,14 +1,14 @@
 import { play } from 'vue-play';
-import Form from './Form';
-import FormExample from '!raw-loader!./Form';
+import Inputs from './Inputs';
+import InputsExample from '!raw-loader!./Inputs';
 
 import TextDoc from './Input.md';
 
-play(Form)
+play(Inputs)
   .displayName('Forms')
   .add('Input', {
-    ...Form,
-    example: FormExample,
+    ...Inputs,
+    example: InputsExample,
     readme: TextDoc,
   })
   ;

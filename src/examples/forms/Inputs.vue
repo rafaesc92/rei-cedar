@@ -1,6 +1,6 @@
 <template>
   <div class="form-example">
-    <h2>Forms</h2>
+    <h2>Inputs</h2>
 
     <cdr-input v-model="debounce"
       label="Validation with debounce"
@@ -110,7 +110,7 @@
   import Components from '../../components/_index';
 
   export default {
-    name: 'forms',
+    name: 'inputs',
     components: Components,
     data() {
       return {

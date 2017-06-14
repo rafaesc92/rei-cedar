@@ -8,7 +8,8 @@
     <anchors data-backstop="anchors"></anchors>
     <buttons data-backstop="buttons"></buttons>
     <lists data-backstop="lists"></lists>
-    <forms data-backstop="forms"></forms>
+    <selects data-backstop="selects"></selects>
+    <inputs data-backstop="forms"></inputs>
     <grid></grid>
     <test data-backstop="test"></test>
     <mountains></mountains>
