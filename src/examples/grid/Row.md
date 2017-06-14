@@ -1,6 +1,6 @@
 ## API
 
-Note: immediate children of `cdr-col` are treated as flex items (due to a flex height but in Safari). As a result, if you want to have more than one child element they should be wrapped in a single `div`.
+Note: immediate children of `cdr-col` are treated as flex items (due to a flex height bug in Safari). As a result, if you want to have more than one child element they should be wrapped in a single `div`.
 
 ### Row
 
